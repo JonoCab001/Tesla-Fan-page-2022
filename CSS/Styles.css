@@ -197,10 +197,13 @@ header, nav {
 }
 
 footer {
+  background-color: #FA261B;
+  color: #fff;
   clear: both;
   text-align: left;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
+  padding: 0.5em;
 }
 
 /* Navigation Bar */
@@ -222,7 +225,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  color: #000;
+  color: #fff;
   float: left;
   text-align: center;
   text-decoration: none;
@@ -231,12 +234,10 @@ nav ul li a {
 
 nav .current {
   background-color: #2C4085;
-  color: #fff;
 }
 
 a:hover {
   background-color: #C22E1D;
-  color: #fff;
 }
 
 /* Page Styling */
@@ -244,15 +245,12 @@ a:hover {
 main {
   height: 100%;
   width: 100%;
-  margin-left: 10em;
   text-align: justify;
   padding: 2em;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  background-color: #fff;
 }
 
 main p {
-  background-color: #fff;
   line-height: 150%;
   line-height: 1.25em;
 }
