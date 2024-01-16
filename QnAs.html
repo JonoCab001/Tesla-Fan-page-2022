@@ -22,15 +22,27 @@
                 <li><a href="https://www.tesla.com/" target="_blank">Tesla</a></li> 
             </ul>          
         </nav>
-        <main>
-            <h1>QnAs 🙋‍♂️</h1>
-            <h2>Questions and Answers</h2>
-            <p>W.I.P (Work in Progress) - Check back soon :)</p>       
-        </main>
+    <main>
+        <h1>QnAs 🙋‍♂️</h1>
+        <h2>Questions and Answers</h2>
+        <h3>Post your Question</h3>
+        <form name="question_form" id="question_form" method="post" action="#">
+            <label for="firstname">First Name:</label><br>
+            <input type="text" name="firstname" id="firstname"><br>
+                
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" name="lastname" id="lastname"><br>
+                
+            <label for="question">Question:</label><br>
+            <textarea name="comments"></textarea><br>
 
-        <form name="demo_form" id="demo_form" method="post" action="#">
-            <textarea name="comments"></textarea>
-        </form>
+            <label for="PostType">What would you like to post your question as?</label><br>
+            <input type="radio" name="anonymousPost" id="anonymousPost">Post anonymously<br>
+            <input type="radio" name="postWithName" id="postWithName">Post with my name shown<br>
+
+            <input type="button" name="postQuestion" value="Post Question">
+        </form>     
+    </main>
         <footer>
             &copy; 2022 A Tesla Fanpage by Jono
         </footer>
