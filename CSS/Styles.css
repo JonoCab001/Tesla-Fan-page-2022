@@ -254,3 +254,26 @@ main p {
   line-height: 150%;
   line-height: 1.25em;
 }
+
+/* Table Styling */
+
+table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  margin: 1em auto;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: .2em .7em;
+  text-align: left;
+}
+
+th {
+  background-color: #FA261B;
+  color: #fff;
+}
+
+tbody tr {
+  background-color: #fff;
+}
