@@ -34,23 +34,26 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ad expedita odio minima autem dolor iure voluptate, consequuntur sunt voluptatem ratione ullam aliquam tempore? Earum, perferendis? Enim soluta tenetur ex?</p>
         </div>
         <br>
-        <h3>Post your Question</h3>
-        <form name="question_form" id="question_form" method="post" action="#">
-            <label for="firstname">First Name:</label><br>
-            <input type="text" name="firstname" id="firstname">
+        <div class="container">
+            <h3>Post your Question</h3>
+            <br>
+            <form name="question_form" id="question_form" method="post" action="#">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname"><br><br>
 
-            <label for="lastname">Last Name:</label>
-            <input type="text" name="lastname" id="lastname"><br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname"><br><br>
                 
-            <label for="question">Question:</label><br>
-            <textarea name="comments"></textarea>
+                <label for="question">Question:</label><br>
+                <input type="text" name="askQuestion" id="askQuestion"><br><br>
 
-            <label for="PostType">What would you like to post your question as?</label><br>
-            <input type="radio" name="anonymousPost" id="anonymousPost">Post anonymously<br>
-            <input type="radio" name="postWithName" id="postWithName">Post with my name shown<br>
+                <label for="PostType">What would you like to post your question as?</label><br>
+                <input type="radio" name="anonymousPost" id="anonymousPost">Post anonymously<br>
+                <input type="radio" name="postWithName" id="postWithName">Post with my name shown<br><br>
 
-            <input type="button" name="postQuestion" value="Post Question">
-        </form>     
+                <input type="button" name="postQuestion" value="Post Question">
+            </form>
+        </div>  
     </main>
         <footer>
             &copy; 2022 A Tesla Fanpage by Jono
