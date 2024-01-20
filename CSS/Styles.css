@@ -278,6 +278,12 @@ tbody tr {
   background-color: #fff;
 }
 
+/* Form Styling */
+
+input[type=text] {
+  width: 100%;
+}
+
 /* Post your Questions Box */
 
 .container {
