@@ -290,3 +290,13 @@ input[type=text] {
   border: 2px solid #000;
   padding: 20px;
 }
+
+/* Block Quote styling */
+
+blockquote {
+  border: 1px solid #000;
+  text-align: center;
+  background-color: #A54637;
+  color: #fff;
+  font-style: italic;
+}
