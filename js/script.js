@@ -34,7 +34,7 @@ let createPost = () => {
     <div>
     <br>
     <h4>${data.text}</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ad expedita odio minima autem dolor iure voluptate, consequuntur sunt voluptatem ratione ullam aliquam tempore? Earum, perferendis? Enim soluta tenetur ex?</p>
+    <p>${data.text}</p>
     </div>
     `;
     input.value = "";
