@@ -1,7 +1,10 @@
 let form = document.getElementById("form");
-let input = document.getElementById("input");
+let inputName = document.getElementById("firstAndLastname");
+let inputQuestion = document.getElementById("questionInput");
 let msg = document.getElementById("msg");
 let Questions = document.getElementById("Questions");
+
+let data = [];
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -10,32 +13,39 @@ form.addEventListener("submit", (e) => {
 });
 
 let formValidation = () => {
-    if (input.value === "") {
+    if (inputName.value === "" || inputQuestion.value === "") {
         msg.innerHTML = "This cannot be left blank";
         console.log("Failed!");
     }
     else {
-        console.log("Successful");
         msg.innerHTML = "";
         acceptData();
+        console.log("Successful");
     }
 };
 
-let data = {};
-
 let acceptData = () => {
-    data["text"] = input.value;
+    // To create a new question object with name and question
+    let question = {
+        name: inputName.value,
+        question: inputQuestion.value
+    };
+
+    data.push(question);
+    createPost(question);
+    inputName.value = "";
+    inputQuestion.value = "";
+
     console.log(data);
-    createPost();
+    //createPost();
 };
 
-let createPost = () => {
+let createPost = (question) => {
     Questions.innerHTML += `
     <div>
-    <br>
-    <h4>${data.text}</h4>
-    <p>${data.text}</p>
+    <h4>${question.name}</h4>
+    <p>${question.question}</p>
     </div>
     `;
-    input.value = "";
+    //input.value = "";
 };
